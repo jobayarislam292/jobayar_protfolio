@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# 1. Redirect /file.html to /file (removes the extension from the URL)
+RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+RewriteRule ^ /%1 [NC,L,R=301]
+
+# 2. Silently map /file back to /file.html so the server can find it
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [NC,L]

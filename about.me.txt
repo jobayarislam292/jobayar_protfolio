@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Md. Jobayar Islam</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Top Bar */
+        .header {
+            padding: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-small {
+            border: 2px solid red;
+            padding: 8px 15px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+
+        .nav-home {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid transparent;
+            transition: 0.3s;
+        }
+
+        .nav-home:hover {
+            color: #38bdf8;
+            border-bottom: 1px solid #38bdf8;
+        }
+
+        /* About Content */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 20px;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+
+        h1 {
+            font-size: 3rem;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+            letter-spacing: 3px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+        }
+
+        .intro-text {
+            font-size: 1.4rem;
+            margin-bottom: 30px;
+            color: #f1f5f9;
+        }
+
+        .details-grid {
+            margin-top: 50px;
+        }
+
+        .detail-item {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            color: #38bdf8; /* Subtle blue for headers */
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        p {
+            font-size: 1.15rem;
+            color: #cbd5e1;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        strong {
+            color: #ffffff;
+        }
+
+        /* Mobile Optimization */
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            .intro-text { font-size: 1.2rem; }
+            .header { padding: 20px; }
+        }
+
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo-small">JOBAYAR'S PORTFOLIO</div>
+        <a href="index.html" class="nav-home">Back to Home</a>
+    </header>
+
+    <main class="container">
+        <h1>ABOUT ME</h1>
+        
+        <p class="intro-text">
+            I am a dedicated Computer Science and Engineering student at IUBAT, driven by the logic of code and the impact of clean design.
+        </p>
+
+        <div class="details-grid">
+            <div class="detail-item">
+                <h2>The Developer</h2>
+                <p>
+                    As the founder of <strong>JR SOLUTION</strong>, I focus on building local utility tools that solve real-world problems. My expertise spans full-stack web development using PHP, MySQL, and modern frontend technologies. I believe software should be efficient, accessible, and high-performing.
+                </p>
+            </div>
+
+            <div class="detail-item">
+                <h2>The Content Writer</h2>
+                <p>
+                    Beyond the terminal, I am a content writer committed to knowledge sharing. I distribute educational materials and software engineering guides for free, helping fellow students navigate the complexities of modern technology and university life.
+                </p>
+            </div>
+
+            <div class="detail-item">
+                <h2>Academic Journey</h2>
+                <p>
+                    Currently pursuing my degree at the <strong>International University of Business Agriculture and Technology (IUBAT)</strong>, I am constantly exploring new frontiers in Competitive Programming (ICPC) and system administration on Kali Linux.
+                </p>
+            </div>
+        </div>
+
+        <div style="margin-top: 60px; border-top: 1px solid #333; padding-top: 20px;">
+            <p style="font-style: italic; font-size: 1rem;">Focused on building a better digital future, one line of code at a time.</p>
+        </div>
+    </main>
+
+</body>
+</html>
